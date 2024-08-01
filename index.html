@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compromised Warning</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #FF4500, #FFD700);
+            background-size: cover;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .fire {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/fire.png') repeat;
+            opacity: 0.4;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Machine is Compromised</h1>
+        <h2>By John Wick</h2>
+    </div>
+    <div class="fire"></div>
+</body>
+</html>
