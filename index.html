@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Pwned</title>
- <style>
-        body {
+    <title>Background Image with Text</title>
+    <style>
+        body, html {
             margin: 0;
             padding: 0;
-            height: 100vh;
-            background-image: url('https://wallpapercave.com/wp/wp5709257.jpg');
+            height: 100%;
+        }
+        .background {
+            position: relative;
+            background: url('https://wallpapercave.com/wp/wp5709257.jpg') no-repeat center center fixed;
             background-size: cover;
-            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .text {
+            position: absolute;
+            z-index: 1;
+        }
+        .text h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        .text h2 {
+            font-size: 1.5em;
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Your Machine is Compromised</h1>
-        <h2>By John Wick</h2>
+    <div class="background">
+        <div class="text">
+            <h1>This Machine is Hacked</h1>
+            <h2>By John Wick</h2>
+        </div>
     </div>
-    <div class="fire"></div>
 </body>
 </html>
