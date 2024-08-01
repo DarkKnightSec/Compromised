@@ -6,41 +6,35 @@
     <title>Background Image with Text</title>
     <style>
         body, html {
-            margin: 0;
-            padding: 0;
             height: 100%;
-        }
-        .background {
-            position: relative;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background: url('https://wallpapercave.com/wp/wp5709257.jpg') no-repeat center center fixed;
             background-size: cover;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
         }
-        .text {
+        .overlay {
             position: absolute;
-            z-index: 1;
+            text-align: center;
+            color: white;
+            font-size: 3rem;
         }
-        .text h1 {
-            font-size: 4em;
+        .overlay h1 {
             margin: 0;
+            font-size: 4rem;
         }
-        .text h2 {
-            font-size: 1.5em;
+        .overlay h2 {
             margin: 0;
+            font-size: 1.5rem;
         }
     </style>
 </head>
 <body>
-    <div class="background">
-        <div class="text">
-            <h1>This Machine is Hacked</h1>
-            <h2>By John Wick</h2>
-        </div>
+    <div class="overlay">
+        <h1>This Machine is Hacked</h1>
+        <h2>By John Wick</h2>
     </div>
 </body>
 </html>
